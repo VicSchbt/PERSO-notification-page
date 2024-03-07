@@ -1,22 +1,13 @@
-export const Type = {
-	REACTION: 'reaction',
-	FOLLOW: 'follow',
-	JOIN_GROUP: 'join_group',
-	MESSAGE: 'message',
-	COMMENT: 'comment',
-	LEFT_GROUP: 'left_group'
-};
-
 const picturePrefix = '/images/';
 
-export const notifications = [
+export const notifications: AppNotification[] = [
 	{
 		id: 1,
 		person: {
 			name: 'Mark Webber',
 			avatar: `${picturePrefix}avatar-mark-webber.webp`
 		},
-		type: Type.REACTION,
+		type: NotificationType.REACTION,
 		relatedPost: {
 			title: 'My first tournament today!',
 			isPicture: false,
@@ -33,7 +24,7 @@ export const notifications = [
 			name: 'Angela Gray',
 			avatar: `${picturePrefix}avatar-angela-gray.webp`
 		},
-		type: Type.FOLLOW,
+		type: NotificationType.FOLLOW,
 		relatedPost: null,
 		relatedGroup: null,
 		message: null,
@@ -46,7 +37,7 @@ export const notifications = [
 			name: 'Jacob Thompson',
 			avatar: `${picturePrefix}avatar-jacob-thompson.webp`
 		},
-		type: Type.JOIN_GROUP,
+		type: NotificationType.JOIN_GROUP,
 		relatedPost: null,
 		relatedGroup: 'Chess Club',
 		message: null,
@@ -59,7 +50,7 @@ export const notifications = [
 			name: 'Rizky Hasanuddin',
 			avatar: `${picturePrefix}avatar-rizky-hasanuddin.webp`
 		},
-		type: Type.MESSAGE,
+		type: NotificationType.MESSAGE,
 		relatedPost: null,
 		relatedGroup: null,
 		message: ` Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
@@ -73,7 +64,7 @@ export const notifications = [
 			name: 'Kimberly Smith',
 			avatar: `${picturePrefix}avatar-kimberly-smith.webp`
 		},
-		type: Type.COMMENT,
+		type: NotificationType.COMMENT,
 		relatedPost: {
 			title: null,
 			isPicture: true,
@@ -90,7 +81,7 @@ export const notifications = [
 			name: 'Nathan Peterson',
 			avatar: `${picturePrefix}avatar-nathan-peterson.webp`
 		},
-		type: Type.REACTION,
+		type: NotificationType.REACTION,
 		relatedPost: {
 			title: '5 end-game strategies to increase your win rate',
 			isPicture: false,
@@ -107,7 +98,7 @@ export const notifications = [
 			name: 'Anna Kim',
 			avatar: `${picturePrefix}avatar-anna-kim.webp`
 		},
-		type: Type.LEFT_GROUP,
+		type: NotificationType.LEFT_GROUP,
 		relatedPost: null,
 		relatedGroup: 'Chess Club',
 		message: null,

@@ -1,0 +1,81 @@
+@import '../../style/colors';
+
+.name {
+	color: $very-dark-grey-blue;
+}
+
+.body,
+.body-bold {
+	color: $dark-grey-blue;
+}
+
+.group {
+	color: $blue;
+}
+
+.time {
+	color: $grey-blue;
+}
+
+.message {
+	padding: 22px;
+	border: 1px solid $very-light-grey-blue;
+	border-radius: 4px;
+	&:hover {
+		cursor: pointer;
+		background-color: $light-grey-blue;
+	}
+}
+
+li {
+	list-style: none;
+}
+
+button {
+	background: none;
+	border: none;
+	width: 100%;
+	text-align: left;
+	padding: 12px;
+	align-items: flex-start;
+	border-radius: 8px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.main {
+	display: flex;
+	gap: 16px;
+}
+
+.marker {
+	display: inline-block;
+	background-color: $red;
+	height: 8px;
+	width: 8px;
+	border-radius: 4px;
+	margin-left: 4px;
+}
+
+.read {
+	display: none;
+}
+
+.active {
+	background-color: $snow;
+}
+
+img {
+	height: 39px;
+}
+
+.infos {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.link:hover {
+	color: $blue;
+	cursor: pointer;
+}

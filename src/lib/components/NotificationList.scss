@@ -1,0 +1,53 @@
+@import '../../style/colors';
+@import '../../style/config';
+
+main {
+	max-width: 730px;
+	background-color: $white;
+	padding: 24px 16px;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	@media screen and (min-width: $gt-mobile) {
+		position: relative;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		border-radius: 16px;
+		height: auto;
+	}
+}
+
+ul {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+}
+
+.command {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-inline: 16px;
+}
+
+.title {
+	font-size: 1.25rem;
+}
+
+button {
+	border: none;
+	background: none;
+	color: $dark-grey-blue;
+	&:hover {
+		color: $blue;
+		cursor: pointer;
+	}
+}
+
+.counter {
+	color: $white;
+	background-color: $blue;
+	padding: 2px 12px;
+	border-radius: 4px;
+}
