@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { NotificationType, type AppNotification } from '$lib/type';
-	import { generateText } from '$lib/utils';
+	import { NotificationType, type AppNotification } from '$type/index';
+	import { generateText } from '$utils/index';
 
 	export let notification: AppNotification;
 </script>

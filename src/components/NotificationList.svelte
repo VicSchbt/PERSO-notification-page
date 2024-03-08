@@ -1,7 +1,6 @@
 <script lang="ts">
 	import NotificationLine from './NotificationLine.svelte';
-	import { type AppNotification } from '$lib/type';
-	import { read } from '$app/server';
+	import { type AppNotification } from '$type/index';
 
 	export let notifications: AppNotification[] = [];
 

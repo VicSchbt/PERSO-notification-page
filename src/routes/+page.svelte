@@ -1,7 +1,7 @@
 <script lang="ts">
 	import '../style/global.scss';
-	import NotificationList from '$lib/components/NotificationList.svelte';
-	import { NotificationType, type AppNotification } from '$lib/type';
+	import NotificationList from '$components/NotificationList.svelte';
+	import { NotificationType, type AppNotification } from '../type';
 
 	const picturePrefix = '/images/';
 
@@ -112,5 +112,9 @@
 		}
 	];
 </script>
+
+<svelte:head>
+	<title>Frontend Mentor | Notifications page</title>
+</svelte:head>
 
 <NotificationList bind:notifications />

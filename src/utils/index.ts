@@ -1,4 +1,4 @@
-import { NotificationType, type AppNotification } from '$lib/type';
+import { NotificationType } from '$type/index';
 
 export const generateText = (notificationType: NotificationType) => {
 	switch (notificationType) {
