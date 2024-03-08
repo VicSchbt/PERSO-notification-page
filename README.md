@@ -14,7 +14,6 @@ This is a solution to the [Notifications page challenge on Frontend Mentor](http
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
@@ -36,7 +35,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Link](https://www.frontendmentor.io/solutions/notification-page-with-svelte-ifU0swWCrN)
 - Live Site URL: [Link](https://vicschbt.github.io/PERSO-notification-page/)
 
 ## My process
