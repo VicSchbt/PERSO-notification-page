@@ -3,6 +3,9 @@
 	import NotificationList from '$components/NotificationList.svelte';
 	import { NotificationType, type AppNotification } from '../type';
 
+	export const trailingSlash = 'always';
+	export const prerender = true;
+
 	const picturePrefix = '/images/';
 
 	let notifications: AppNotification[] = [
